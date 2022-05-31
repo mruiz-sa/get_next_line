@@ -6,7 +6,7 @@
 /*   By: mruiz-sa <mruiz-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 11:27:53 by mruiz-sa          #+#    #+#             */
-/*   Updated: 2022/05/13 13:55:53 by mruiz-sa         ###   ########.fr       */
+/*   Updated: 2022/05/31 17:27:03 by mruiz-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,23 +104,3 @@ char	*get_next_line(int fd)
 	save[fd] = ft_cut_save(save[fd]);
 	return (line);
 }
-
-/* int	main(void)
-{
-	int		fd;
-	int		ret;
-
-	fd = open("test.txt", O_RDWR | O_CREAT);
-	printf("fd: %d\n", fd);
-	printf("GNL:%s\n", get_next_line(fd));
-	printf("GNL:%s\n", get_next_line(fd));
-	ret = read(fd, str, 35);
-	printfget_next_line(fd);
-	printf("He leido %d bytes y es esto %s\n", ret, str);
-	ret = read(fd, str, 35);
-	printf("He leido %d bytes y es esto %s\n", ret, str);
-	ret = read(fd, str, 35);
-	printf("He leido %d bytes y es esto %s\n", ret, str);
-	close(fd);
-	return (0);
-} */
